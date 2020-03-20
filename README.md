@@ -27,8 +27,8 @@ To run an app just open index.html in root directory
 # Screenshots!
 
 ![ScreenShot](/screenshots/main.PNG)
-![ScreenShot](/screenshots/chapter1.png)
-![ScreenShot](/screenshots/chapter3.png)
+![ScreenShot](/screenshots/chapter1.PNG)
+![ScreenShot](/screenshots/chapter3.PNG)
 
 ## License
 
