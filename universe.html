@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="Images/Descent-icon.png">
+    <title>Descent - interactive story</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/cssuniverse.css">
+    <!-- fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa%7COpen+Sans+Condensed:300%7COswald%7CRoboto+Condensed" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jss/explore.js" type="text/javascript" defer>
+    </script>
+    <script>
+    $(document).ready(function() {
+
+        console.log("document loaded");
+
+    });
+
+    $(window).on("load", function() { // when loaded check if there is localstorage name value for search input
+        if (localStorage.name) {
+            searchBar3();
+            localStorage.name = "";
+        }
+        console.log("window loaded");
+    });
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="flex-container">
+                <div class="box one left-side-nav">
+                    <a class="containerLogo" href="index.html"> <img id="logo" src="images/descent-logo-transparent.png" alt="descentlogo"> </a>
+                </div>
+                <div class="box two center-nav">
+                    <ul>
+                        <li> <a  id="startButton" href="story.html"> Start your journey</a> </li>
+                        <li> <a class="slide" id="about" href="about.html"> About</a> </li>
+                        <li> <a class="slide" id="universe" href="universe.html">Explore </a> </li>
+                        <li> <a  class="slide" id="contactMe" href="form.html">Contact me </a></li>
+                    </ul>
+                </div>
+                <div class="box three right-side-nav">
+                    <input class="searchbar" type="text" id="searchbar" name="search" placeholder="Search characters" onkeyup="searchBar1();">
+                </div>
+            </nav>
+        </header>
+        <!-- /header -->
+        <div class="content">
+            <!-- search container -->
+            <section class="searchContainer">
+                <img src="Images/search_icon.png" alt="search icon" id="searchIconHelmet">
+                <input type="text" name="search" id="searchbarCharacter" placeholder="FIND A CHARACTER" onkeyup="searchBar();">
+                <label id="selectLabel" for="select"> Sort by </label>
+                <select name="selector" id="select">
+                    <option value="alphabet"> A-Z </option>
+                    <option value="class"> CLASS </option>
+                </select>
+            </section>
+            <!-- /search container -->
+            <header class=description>
+                <h1 id="heading"> Heroes </h1>
+                <p id="infoCharacters"> Heroes are the characters in Descent: Journeys in the Dark </p>
+            </header>
+            <!-- character container -->
+            <section class="characterContainer">
+                <figure class="charactersImages">
+                    <img src="Images/Ashrian.jpg" alt="Ashrian character">
+                    <figcaption id="testing"> Ashrian </figcaption>
+                </figure>
+                <figure>
+                    <img src="Images/Grisban.jpg" alt="Grisbancharacter">
+                    <figcaption> Grisban </figcaption>
+                </figure>
+                <figure>
+                    <img src="Images/Syndrael.png" alt="Syndrael character">
+                    <figcaption> Syndrael </figcaption>
+                </figure>
+                <figure>
+                    <img src="Images/AvricAlbright.png" alt="AvricAlbright character">
+                    <figcaption> Avric Albright </figcaption>
+                </figure>
+                <figure>
+                    <img src="Images/JainFairWood.png" alt="JainFairWood character">
+                    <figcaption> Jain FairWood </figcaption>
+                </figure>
+                <figure>
+                    <img src="Images/LeoricoftheBook.png" alt="Leoric of the book character">
+                    <figcaption> Leoric of the book </figcaption>
+                </figure>
+                <figure>
+                    <img src="Images/TombleBurrowell.png" alt="Tomble Burrowell character">
+                    <figcaption> Tomble Burrowell </figcaption>
+                </figure>
+                <figure>
+                    <img src="Images/WidowTarha.jpg" alt="Widow Tarha character">
+                    <figcaption> Widow Tarha </figcaption>
+                </figure>
+                <figure>
+                    <img src="Images/Averil.png" alt="Averil character">
+                    <figcaption> Averil </figcaption>
+                </figure>
+                <figure>
+                    <img src="Images/OneFist.png" alt="One Fist character">
+                    <figcaption> One Fist </figcaption>
+                </figure>
+                <figure>
+                    <img src="Images/Grisom.png" alt="Grisom character">
+                    <figcaption> Grisom </figcaption>
+                </figure>
+                <figure>
+                    <img src="Images/Jaes2.png" alt="Jaes the exile character">
+                    <figcaption> Jaes the exile </figcaption>
+                </figure>
+            </section>
+            <!-- /character container -->
+        </div>
+        <footer class="footerContent">
+            <ul class="informationFooter">
+                <!-- left side of footer -->
+                <li> <a href="form.html" class="aboutUs">About us </a></li>
+                <li> <a href="" class="discover">Discover  </a></li>
+            </ul>
+            <!-- social media icons -->
+            <ul class="socialMediaIconsFooter">
+                <li>
+                    <a href="" class="twitter"><img id="logo" src="images/twitter-icon.png" alt="twitterlogo"></a>
+                </li>
+                <li>
+                    <a href="" class="mail"><img id="logo" src="images/mail-icon.png" alt="maillogo"></a>
+                </li>
+            </ul>
+        </footer>
+        <div class="rights">
+            <p> Copyright &copy; 2017</p>
+            <p> Coded by Maciej Czarnota </p>
+        </div>
+    </div>
+</body>
+
+</html>

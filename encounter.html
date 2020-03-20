@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="Images/Descent-icon.png">
+    <title>Descent - interactive story</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/cssstory3.css">
+    <!-- fonts from google   -->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans+Condensed:300|Oswald|Roboto+Condensed" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+    <!--/fonts from google   -->
+    <!-- jquery from CDN   -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- /jquery from CDN   -->
+    <script src="jss/encounter.js" type="text/javascript" defer>
+    </script>
+    <script>
+    $(document).ready(function() {
+        console.log("document loaded");
+
+    });
+
+    $(window).on("load", function() {
+        console.log("window loaded");
+    });
+    </script>
+</head>
+
+<body>
+    <div class="wrapper" id="wrapper">
+        <header>
+            <nav class="flex-container">
+                <div class="box one left-side-nav">
+                    <a class="containerLogo" href="index.html"> <img id="logo" src="images/descent-logo-transparent.png" alt="descentlogo"> </a>
+                </div>
+                <div class="box two center-nav">
+                    <ul>
+                        <li> <a  id="startButton" href="http://google.com"> Start your journey</a> </li>
+                        <li> <a class="slide" id="about" href="about.html"> About</a> </li>
+                        <li> <a class="slide" id="universe" href="universe.html">Explore </a> </li>
+                        <li> <a class="slide" id="contact me" href="form.html">Contact me </a></li>
+                    </ul>
+                </div>
+                <div class="box three right-side-nav">
+                    <input class="searchbar" type="text" id="searchbar" name="search" placeholder="Search characters" onkeyup="searchBar1();">
+                </div>
+            </nav>
+        </header>
+        <!-- /header -->
+    </div>
+    <div class="content">
+        <div id="scrollNavBar">
+            <h1> <span class="chapterHeader">Chapter 3:</span><span class="introductionHeader"> Encounter</span> </h1>
+            <div class="arrows">
+                <figure id="backArrow">
+                    <a href="story2.html">
+                        <img src="Images/backArrowMenu.png" alt="Curly arrow that leads to page before">
+                    </a>
+                </figure>
+                <figure>
+                    <a href="#wrapper">
+                        <img src="Images/topArrowMenu.jpg" alt="Straight arrow that leads to top of the page">
+                    </a>
+                </figure>
+            </div>
+        </div>
+        <h1 id="header"> <span class="chapterHeader">Chapter 3:</span><span class="introductionHeader"> <br>Encounter</span></h1>
+        <p class="firstParagraph"> You run after Ogr until you run out of breath. </p>
+        <p>
+            <q> He is really fast for such a big guy</q> you said it with an anger in your voice. </p>
+        <p> You reached another place </p>
+        <p> The light here is ,if anything, even harsher and flatter. The air is like the inside of a bread oven </p>
+        <p> Armor and weapon are painful to wear them and touch. Loose sand and grit cover the ground,and you hear harsh voices echoing from everywhere, as from carrion brids. You sense eyes upon you, cold grey eyes that glind with sadistic humour. </p>
+        <p>
+            <q> Show yourself you fiend! I came here to defeat you and stop this evil manace! </q> you screamed. </p>
+        <p> Suddenly you spot weird looking figure, a woman! </p>
+        <p> This woman had locks of curly, raven black hair, falling in a cascade of curls on her shapely shoulders. Her face was very pale, triangular in shape with a slightly receded chin.</p>
+        <p> Her eyes were cold and sparkling with a remarkable violet penetrating gaze, in anger blazing with livid, blue-gray fire. Those very eyes also concealed wisdom and imperiousness. Her nose was slightly long, mouth was pale with thin and slightly crooked, soft, sweet with lipstick, proud lips. On her long and slender neck hanged a black marigold with a star made of obsidian sparkling with a multitude of tiny diamonds embedded in it.</p>
+        <!-- /story container -->
+        <section class="chatWindow">
+            <figure class=RavanaImg>
+                <img id="Ravana" src="Images/ravanaChatImg.jpg" alt="Woman with dark hair">
+            </figure>
+            <aside class="actualChat" id="actualChat">
+                <p id="firstSentence"> "I am Ravana, what's your name warrior?" </p>
+                <section id=firstAnswer>
+                    <p> You were thinking if you should answer this woman. You don't know her! Still you decided to tell her your name:</p>
+                    <input type="text" name="nameUser" id="nameUser" placeholder="Say your name " size="40" type="submit">
+                </section>
+                <p id="secondSentence"> It is nice to meet you. Why such a strong hero comes to my little home? Is there anything I can help you with,  </p>
+                <section id="secondAnswer">
+                    <p id="firstParagraphSecondAnwer"> Naturally, you wouldn't fall for her appearance. You understood what kind of demon you face. Vicious and beautiful. You reply: </p>
+                    <ol class="firstSentenceList">
+                        <li> I will not fall for your plays! I know what kind of fiend you are, you prey on weak people and kill them. I will put an end to it! </li>
+                        <li> It is nice to meet you Ravana. I saw this mansion and was corious what was inside. I hope you don't mind that I'm here. </li>
+                        <li> I lost my glasses can you help me find them!</li>
+                    </ol>
+                </section>
+                <p id="thirdSentence">
+                    <q> Oh please let's not say such a ludicrous things. You are interested in murders that are happening in the town don't you? </q>
+                </p>
+                <section id="thirdAnswer">
+                    <p> In that instant you sensed terrifying aura coming from her. You knew that she is a powerful existence. </p>
+                    <ol>
+                        <li> Yes I am, but how do you know about it?
+                        </li>
+                        <li> I am looking for a culprit but first tell me why such a beautiful woman lives in a basement of an old mansion? </li>
+                        <li> You monster you will not trick me! Why you are killing people around! </li>
+                    </ol>
+                </section>
+                <section>
+                    <p id="fourthSentence"> I maybe old and lived countless of years but to live eternally I needed fresh blood and what's the better source of blood than poor humans. Since such a strong specimen comes to my place I'm gonna make you my little dinner as well!!! </p>
+            </aside>
+            </section>
+            <!--/after story -->
+            <section class=game>
+            <p> You see Ravana rushing towards you, changing into vampire!</p>
+            <p> You don't threat. You  are experienced in  dealing with evil beings like her. You blocked the atack with your shield and merciless cut down her throat with your sword.  
+            <p> You hear the final  whispers as Ravana falls before you. </p>
+            <p>The whisper becomes a scream, and she melts away as the rage that empowered this abomination is dispersed.</p>
+            <p> Nothing can bring back back those who have already fallen and died, but you have brought this unnatural monster to an end. </p>
+            <p> Now the hillfolk and the people of the valley can work together to rebuild. </p>
+            <h1 class="theEnd"> THE END </h1>
+            
+                </article>
+            </section>
+    </div>
+    <footer class="footerContent">
+        <ul class="informationFooter">
+            <!-- left side of footer -->
+            <li> <a href="form.html" class="aboutUs">About us </a></li>
+            <li> <a href="" class="discover">Discover  </a></li>
+        </ul>
+        <!-- social media icons -->
+        <ul class="socialMediaIconsFooter">
+            <li>
+                <a href="" class="twitter"><img id="logo" src="images/twitter-icon.png" alt="twitterlogo"></a>
+            </li>
+            <li>
+                <a href="" class="mail"><img id="logo" src="images/mail-icon.png" alt="maillogo"></a>
+            </li>
+        </ul>
+    </footer>
+    <div class="rights">
+        <p> Copyright &copy; 2017</p>
+        <p> Coded by Maciej Czarnota </p>
+    </div>
+</body>
+
+</html>

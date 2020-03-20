@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="Images/Descent-icon.png">
+    <title>Descent - interactive story</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/cssstory.css">
+    <!-- fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans+Condensed:300|Oswald|Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    // function ready checks DOM  
+    $(document).ready(function() {
+        console.log("document loaded");
+    });
+
+    $(window).on("load", function() {
+        console.log("window loaded");
+    });
+    </script>
+</head>
+
+<body>
+    <div class="wrapper" id="wrapper">
+        <header>
+            <nav class="flex-container">
+                <div class="box one left-side-nav">
+                    <a class="containerLogo" href="index.html"> <img id="logo" src="images/descent-logo-transparent.png" alt="descentlogo"> </a>
+                </div>
+                <div class="box two center-nav">
+                    <ul>
+                        <li> <a id="startButton" href="story.html"> Start your journey</a> </li>
+                        <li> <a class="slide" id="about" href="about.html"> About</a> </li>
+                        <li> <a class="slide" id="universe" href="universe.html">Explore </a> </li>
+                        <li> <a class="slide" id="contact me" href="form.html">Contact me </a></li>
+                    </ul>
+                </div>
+                <div class="box three right-side-nav">
+                    <input class="searchbar" type="text" id="searchbar" name="search" placeholder="Search characters" onkeyup="searchBar1();">
+                </div>
+            </nav>
+        </header>
+        <!-- /header -->
+        <div class="content">
+            <div id="scrollNavBar">
+                <h1> <span class="chapterHeader">Chapter 1: </span><span class="introductionHeader"> A deathly problem</span> </h1>
+                <div class="arrows">
+                    <figure id="backArrow">
+                        <a href="index.html">
+                            <img src="Images/backArrowMenu.png" alt="Curly arrow that leads to page before">
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#wrapper">
+                            <img src="Images/topArrowMenu.jpg" alt="Straight arrow that leads to top of the page">
+                        </a>
+                    </figure>
+                </div>
+            </div>
+            <h1 id="header"> <span class="chapterHeader"> Chapter1:</span><span class="introductionHeader">A deathly problem</span></h1>
+            <section class="actualContent">
+                <p> It started with a goat. </p>
+                <p> Jeddrah Krannok, a local farmer, found one of his goats dead in its pen, the blood drained from its body. A few days later, another farmer lost a cow. The cow was also drained of blood.</p>
+                <p> A week later, you found the first human victim, Hannah Jerrod, your famously boisterous innkeep, dead in her bed...with all the blood drained from her body. Two days later, the mayor's younger brother was also dead. </p>
+                <p> Panic spread through town. Talk of vampires was everywhere. You led more then your fair share of night patrols through the rainy, moonshadowed streets. Yet three more people were found dead - with no sign of fang marks in their too-pale necks. </p>
+                <p> You were beginning to despair of ever discovering the culprit when you found few flecks of mica by the bedside of the latest victim, an elderly man named McGrie, who could drink every other man in town under the table but apparently couldn't fight off the murderer.</p>
+                <p> You knew the only place around here where you could find mica chips were the Sun Cliffs north of town. There were rumours of an ancient house that has always been there, and people say there once was a man that dwells within who isolates himself. Gathering your equipment and your most trusted companions, you rode out to search the base of the cliffs.</p>
+                <p> The venture to the cliff is arduous, with no road and no path of any kind the navigation of the crevices, formations and potholes is daunting; and the ever-increasing thickness of Mist only adds to the problems. It's dark but still, with your trusty lantern providing only just enough light to see your next footstep, you press on. </p>
+            </section>
+            <!-- Background changing section !-->
+            <section class="changingBackground">
+                <div class="contentChangingBackground">
+                    <p> From noon to dusk you journeyed up the cliff when finally are presented with the silhouette of a vast single tiered residence. You give a shudder as the night draws in and the cold breeze wind seems to be getting stronger. </p>
+                    <p>Making your way through the choking mist you observe that all windows, except for those on the inaccessible front of the house are boarded and locked impeding your entry. There is one final door to try; this is your last hope before resorting to force to gain entry. </p>
+                    <p> You noticed the door is locked by a weird looking mechanism with colorful runes. You decided to solve it.</p>
+                </div>
+            </section>
+            <!--/ Background changing section/!-->
+            <section id="gameLock" class="gameLock">
+                <section class="gameRules">
+                    <h2 class=gameNameHeader> Door lock game</h2>
+                    <p> Everytime you click on the stone it rotates clockwise. You have 9 turns to unlock the mechanism. Everytime you click on it the turn value is substracted. Match the color of each side of the stones . The lock opens when the symbols on every stone match every adjacent symbol (including the symbols on the core key). </p>
+                </section>
+                <section class=turnCounterContainer>
+                <p id="turnCounter"> Turns left: <span id="turns"> 9 </span>  </p>
+                    <section id="lockMechanism" class="lock">
+                        <img id="lock" src="Images/lock-mechanism.png" alt="Lock with 4 different holes">
+                        <img id="topleft" src="Images/top-left.png" alt="Lock in a shape of circle with 4 colors" onclick="rotate(1)">
+                        <img id="topright" src="Images/top-right.png" alt="Lock in a shape of circle with 4 colors" onclick="rotate(2)">
+                        <img id="bottomleft" src="Images/bottom-left.png" alt="Lock in a shape of circle with 4 colors" onclick="rotate(3)">
+                        <img id="bottomright" src="Images/bottom-right.png" alt="Lock in a shape of circle with 4 colors" onclick="rotate(4)">
+                    </section>
+                    
+                    <p class="gameRulesDescription"> Unlock the door by clicking on elements and match their colors </p>
+
+                    </section>
+                    <p class="gameover"> Suddenly, you noticed three massive spiders heave themselves up over the edge. They advanced upon you, their mandibles dripping foul venom! One of them bite you! You fall without having the strenght to stand up again. You know that this is it... you died... </p>
+            </section>
+            <section id="nextContent">
+                <p> Finally you managed to open it </p>
+                <p>Several small rusty spots clung to the handle of the door, and an aura of evil emanated from the entrance. </p>
+                <p> Now, glancing back at your friends, you grit your teeth and pull open the door. Ducking under a tangled mass of brambles, you enter.</p>
+                <p> Whether the villain is a vampire or some other menace, you just hope your skills will be up to the test.</p>
+                <figure>
+                    <a href="story2.html"><img class="nextPage" src="Images/nextpage.png" alt="next page button"></a>
+                </figure>
+                <p id="nextPage"> Next Page </p>
+            </section>
+            <!-- /story container -->
+        </div>
+        <footer class="footerContent">
+            <ul class="informationFooter">
+                <!-- left side of footer -->
+                <li> <a href="form.html" class="aboutUs">About us </a></li>
+                <li> <a href="" class="discover">Discover  </a></li>
+            </ul>
+            <!-- social media icons -->
+            <ul class="socialMediaIconsFooter">
+                <li>
+                    <a href="" class="twitter"><img id="logo" src="images/twitter-icon.png" alt="twitterlogo"></a>
+                </li>
+                <li>
+                    <a href="" class="mail"><img id="logo" src="images/mail-icon.png" alt="maillogo"></a>
+                </li>
+            </ul>
+        </footer>
+        <div class="rights">
+            <p> Copyright &copy; 2017</p>
+            <p> Coded by Maciej Czarnota </p>
+        </div>
+    </div>
+    <script src="jss/js.js" type="text/javascript">
+    </script>
+</body>
+
+</html>

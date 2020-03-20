@@ -1,0 +1,381 @@
+* {
+    font-family: arial;
+    margin: 0;
+}
+body {
+height:100%;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.wrapper {
+position: relative;
+height:100%;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.flex-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    border: 10px solid transparent;
+    border-image: url("../Images/border-nav.png") 30;
+    -webkit-flex-wrap: wrap;
+}
+
+.searchContainer {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    margin: 20px 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.searchContainer img,
+label {
+    padding: 0 10px;
+}
+
+
+/*//when hovering on image*/
+
+.characterContainer img {
+    transition: all .2s ease-in-out;
+}
+
+.characterContainer img:hover {
+    cursor: pointer;
+    z-index: 1000;
+    transform: scale(1.1);
+}
+
+img:hover {
+    opacity: 0.6;
+}
+
+#searchIconHelmet {
+    opacity: 1.0;
+}
+
+#selectLabel {
+    padding: 0 10px 0 30px;
+}
+
+.one {
+    flex-grow: 1;
+}
+
+.two {
+    flex-grow: 3;
+    align-self: center;
+}
+
+#universe {
+    color: #000000;
+}
+
+#searchbarCharacter {
+    flex: 1 1 0;
+    border: 1px solid #637282;
+    border-radius: 5px;
+}
+
+#searchbarCharacter:focus {
+    opacity: 0.6;
+}
+
+#select {
+    border: 1px solid #637282;
+}
+
+label {
+    align-self: flex-end;
+}
+
+.characterContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.characterContainer img {
+    flex-grow: 1;
+    flex-basis: 33%;
+    display: block;
+    border: #637282 1px solid;
+    border-radius: 5px;
+}
+
+.description {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+/* pseudo border */
+
+.slide:after {
+    display: block;
+    background: transparent;
+    content: "";
+    height: 1px;
+    margin: 0 auto;
+    width: 0;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+.slide:hover:after {
+    width: 50%;
+    background-color: #108CB5;
+}
+
+#contactMe:hover:after {
+    width: 80%;
+}
+#universe:after{
+    width: 50%;
+    background-color: #108CB5;
+}
+
+/*!!END HOVER EFFECT ON NAVBAR END  !!*/
+
+/* svg background */
+
+#heading:before {
+    content: url("../Images/divider-left-color.png");
+}
+
+#heading:after {
+    content: url("../Images/divider-right-scaled.png");
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.three {
+    flex-grow: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex-container ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.flex-container li {
+    list-style-type: none;
+    flex: 1 1 0;
+    flex-wrap: wrap;
+}
+
+.flex-container a {
+    text-decoration: none;
+    color: #637282;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.flex-container li a:hover {
+    color: black;
+}
+
+
+/*  start button in navbar */
+
+#startButton {
+    color: #108CB5;
+    border: 1px solid #c1c7cd;
+    border-radius: 15px;
+    margin: auto 0;
+}
+
+#startButton:active {
+    transform: translateY(4px);
+}
+
+#startButton:hover {
+    border: 1px solid #108CB5;
+}
+
+
+/*searchbar positioning in navbar */
+
+.searchbar {
+    border-radius: 5px;
+    width: 35%;
+    border: 1px solid #637282;
+    background-image: url(../Images/search.icon.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 5px 20px 5px 40px;
+    align-self: center;
+    margin: 0;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.searchbar:focus {
+    width: 100%;
+    opacity: 0.6;
+}
+
+
+/* image positioning */
+
+#logo {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.content {
+height:100%;
+    width: 100%;
+}
+
+.left-side-content {
+    flex-basis: 10%;
+    flex-grow: 2;
+}
+
+.right-side-content {
+    flex-basis: 40%;
+    flex-grow: 1;
+}
+
+.center-side-content {
+    flex-basis: 50%;
+    flex-grow: 1;
+    background-image: url(../Images/background-texture-content2.jpg);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    max-height: 500px;
+}
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.startGameButton,
+.exploreGameButton {
+    flex-grow: 1;
+    text-decoration: none;
+    margin: 30px 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.startGameButton {
+    background-color: #108CB5;
+}
+
+.exploreGameButton {
+    background-color: gray;
+}
+
+a {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1,
+h2,
+label,
+.buttons a,
+p,
+form input[type=email],
+form input[type=text],
+textarea,
+input {
+    font-family: 'Comfortaa', cursive, Arial, Sans-serif;
+    line-height: 1.2em;
+    padding: 5px;
+    word-spacing: 0.2em;
+    color: black;
+}
+
+h1 {
+    font-size: 31px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+.buttons a {
+    color: #fff;
+}
+
+.buttons a:hover {
+    opacity: 0.7;
+}
+
+.footerContent {
+
+    border: 10px solid transparent;
+    border-image: url("../Images/border-nav.png") 30;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.informationFooter {
+    display: flex;
+    flex-basis: 25%;
+}
+
+.informationFooter li {
+    flex: 1 1 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.informationFooter a,
+.socialMediaIconsFooter a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.socialMediaIconsFooter {
+    display: flex;
+    max-width: 100px;
+    justify-content: flex-start;
+}
+
+.socialMediaIconsFooter li {
+    flex: 1 1 0;
+    list-style-type: none;
+}
+
+.socialMediaIconsFooter img {
+    max-width: 100%;
+    height: auto;
+}
+
+.rights {
+    text-align: center;
+}
+
+.informationFooter {
+    margin: auto 0;
+}

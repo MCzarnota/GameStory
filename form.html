@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="Images/Descent-icon.png">
+    <title>Descent - interactive story</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/cssforms1.css">
+    <!-- fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa%7COpen+Sans+Condensed:300%7COswald%7CRoboto+Condensed" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jss/about.js" type="text/javascript" defer>
+    </script>
+    <script>
+    $(document).ready(function() {
+        console.log("document loaded");
+
+    });
+
+    $(window).on("load", function() {
+        console.log("window loaded");
+    });
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="flex-container">
+                <div class="box one left-side-nav">
+                    <a class="containerLogo" href="index.html"> <img id="logo" src="images/descent-logo-transparent.png" alt="descentlogo"> </a>
+                </div>
+                <div class="box two center-nav">
+                    <ul>
+                        <li> <a   id="startButton" href="http://google.com"> Start your journey</a> </li>
+                        <li> <a class="slide"  id="about" href="about.html"> About</a> </li>
+                        <li> <a class="slide"  href="universe.html">Explore </a> </li>
+                        <li> <a class="slide"  id="contactMe" href="form.html">Contact me </a></li>
+                    </ul>
+                </div>
+                <div class="box three right-side-nav">
+                    <input class="searchbar" type="text" id="searchbar" name="search" placeholder="Search characters" onkeyup="searchBar1();">
+                </div>
+            </nav>
+        </header>
+        <!-- /header -->
+        <div class="content">
+            <h1 id="heading"> About me </h1>
+            <section class="aboutMyself">
+                <figure>
+                    <img class="myPhoto" src="Images/myself.jpg" alt="A guy with glasses smiling,creator of this website">
+                </figure>
+                <aside class="info">
+                    <div class="information">
+                        <p> Hello, </p>
+                        <p> My name is <b> Maciej </b> the guy responsible for creating this website :). </p>
+                        <p> I'm a <b>passionate gamer  </b> and I wanted to share a bit of fun that you can get from it. I'm a <b>former professional e-sport gamer </b> and <b> IT specialist </b> who is driven about creating new stuff and explore new things. Currently studing computer science in University of Queensland. </p>
+                        <p> <b> I  find joy and value in telling compelling stories and solving problems through creating stuff. </b> </p>
+                        <p> My favorite quote is: </p>
+                        <blockquote class="quote">
+                            <q> Play hard, work hard </q>
+                        </blockquote>
+                        <p> I try to spread this idea since life should be fun as well!</p>
+                        <p> This is who I am. </p>
+                        <p>If you want me to get some stuff for you like create a website or just simply you got a question regarding front-end field just simply <a id="linkName" href="#name">send me a message.</a>
+                            <p>I love meeting new people! I promise I will try to answer it :) </p>
+                            <p> You can also find me on <a class="linkFacebook" href="https://www.facebook.com/maciej.czarnota" target="_blank">facebook</a> or <a href="https://www.linkedin.com/in/maciej-czarnota-7a0b2119/" class="linkLinkedin" target="_blank">linkedin.</a> </p>
+                    </div>
+                </aside>
+            </section>
+            <h1 id="contactHeading"> Contact me </h1>
+            <section class=formSection>
+                <form id = "form" name="form">
+                    <fieldset>
+                        <legend> Have a question or just want to get in touch? Let's chat! </legend>
+                        <label id="labelId" for="name"> Name:* <img  id ="nameImg" class="imgcheck" src='Images/valid.png' alt='checked'> </label> 
+                        <input type="text" id="name" name="Name" size="35" placeholder="Please type your name" > 
+                        <label for="surname"> Surname: <img  class="imgcheck" src='Images/valid.png' alt='checked'> </label>
+                        <input type="text" id="surname" name="surname" size="35" placeholder="Please type your surname (optional)">
+                        <label id ="labelEmail" for="email"> Email:*  <img  class="imgcheck" src='Images/valid.png' alt='checked'></label>
+                        <input type="email" id="email" name="email" size="35" placeholder="Please type your email" >
+                        <label for="subject"> Subject: <img  class="imgcheck" src='Images/valid.png' alt='checked'> </label>
+                        <input type="text" id="subject" name="subject" size="35" placeholder="Fill the subject (optional)" >
+                        <label  id ="labelTextArea" for="message"> Message: <img  class="imgcheck" src='Images/valid.png' alt='checked'> </label>
+                        <textarea id="message" name="textMessage" rows="10" size="30" cols="35">Please write your message here</textarea>
+                        <input id="submit" type="submit" name="submit" value="Send">
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+        <footer class="footerContent">
+            <ul class="informationFooter">
+                <!-- left side of footer -->
+                <li> <a href="form.html" class="aboutUs">About us </a></li>
+                <li> <a href="" class="discover">Discover  </a></li>
+            </ul>
+            <!-- social media icons -->
+            <ul class="socialMediaIconsFooter">
+                <li>
+                    <a href="" class="twitter"><img id="logo" src="images/twitter-icon.png" alt="twitterlogo"></a>
+                </li>
+                <li>
+                    <a href="" class="mail"><img id="mail" src="images/mail-icon.png" alt="maillogo"></a>
+                </li>
+            </ul>
+        </footer>
+        <div class="rights">
+            <p> Copyright &copy; 2017</p>
+            <p> Coded by Maciej Czarnota </p>
+        </div>
+    </div>
+</body>
+
+</html>

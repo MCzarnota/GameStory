@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="Images/Descent-icon.png">
+    <title>Descent - interactive story</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <!-- fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa%7COpen+Sans+Condensed:300%7COswald%7CRoboto+Condensed"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Croissant+One|Kumar+One|New+Rocker" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        // function ready checks DOM
+        $(document).ready(function () {
+                console.log("document loaded");
+            }
+        );
+
+        $(window).on("load", function () {
+                console.log("window loaded");
+            }
+        );
+    </script>
+</head>
+
+<body>
+<div class="wrapper">
+    <header>
+        <nav class="flex-container">
+            <div class="box one left-side-nav">
+                <a class="containerLogo" href="index.html"> <img src="images/descent-logo-transparent.png"
+                                                                 alt="descentlogo"> </a>
+            </div>
+            <div class="box two center-nav">
+                <ul>
+                    <li class="startButtonContainer"><a id="startButton" href="story.html"> Start your journey</a></li>
+                    <li><a class="slide" id="about" href="about.html"> About</a></li>
+                    <li><a class="slide" href="universe.html">Explore </a></li>
+                    <li><a class="slide" id="contactMe" href="form.html">Contact me </a></li>
+                </ul>
+            </div>
+            <div class="box three right-side-nav">
+                <input class="searchbar" type="text" id="searchbar" name="search" onkeyup="searchBar1();"
+                       placeholder="Search characters">
+            </div>
+        </nav>
+    </header>
+    <!-- /header -->
+    <div class="content">
+        <section class="left-side-content">
+        </section>
+        <section class="center-side-content">
+        </section>
+        <section class="right-side-content">
+            <div class="gamedesc">
+                <h1 class="mainHeading"> Interactive, interesting, mysterious </h1>
+                <p> Descent is based on one of the most popular fantasy board game <i> Descent: Journeys in the Dark</i>
+                </p>
+                <p> This interactive story will give you a glimps of how fantasy world looks like. With environtment
+                    full of monsters and dragons you will be put into a mystery that you need to solve.
+                </p>
+                <p> So dont wait anymore and explore new world!</p>
+            </div>
+            <div class="buttons">
+                <a id="startGameButton" class="startGameButton" onclick="delay ()">
+                    <span>Start your story</span>
+                </a>
+                <a class="exploreGameButton" id="exploreGameButton" href="about.html">
+                    <span>Read more about the Descent</span>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footerContent">
+        <ul class="informationFooter">
+            <!-- left side of footer -->
+            <li><a href="about.html" class="aboutUs">About us </a></li>
+            <li><a href="universe.html" class="discover">Discover </a></li>
+        </ul>
+        <!-- social media icons -->
+        <ul class="socialMediaIconsFooter">
+            <li>
+                <a href="http://twitter.com" class="twitter"><img id="logo" src="images/twitter-icon.png"
+                                                                  alt="twitterlogo"></a>
+            </li>
+            <li>
+                <a href="http://gmail.com" class="mail"><img id="mail" src="images/mail-icon.png" alt="maillogo"></a>
+            </li>
+        </ul>
+
+    </footer>
+    <div class="rights">
+        <p> Copyright &copy; 2017</p>
+        <p> Coded by Maciej Czarnota </p>
+    </div>
+
+</div>
+
+<script src="jss/index.js" type="text/javascript">
+</script>
+</body>
+
+</html>

@@ -1,0 +1,357 @@
+* {
+    font-family: arial;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+height:100%;
+}
+html{
+height:100%;
+}
+.wrapper {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+height: 100%;
+
+}
+
+.flex-container {
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    border: 10px solid transparent;
+    border-image: url("../Images/border-nav.png") 30;
+    -webkit-flex-wrap: wrap;
+
+}
+
+#universe {
+    color: black;
+}
+
+.one {
+    flex-grow: 1;
+}
+
+.two {
+    flex-grow: 3;
+    align-self: center;
+}
+
+.three {
+    justify-content: flex-end;
+    flex-grow: 2;
+    display: flex;
+}
+
+.flex-container ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.flex-container li {
+    list-style-type: none;
+    flex: 1 1 0;
+    flex-wrap: wrap;
+}
+
+.flex-container a {
+    text-decoration: none;
+    color: #637282;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.flex-container li a:hover {
+    color: black;
+}
+
+
+/* HOVER EFFECT ON NAVBAR */
+
+.slide {
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    transition: 2 ease-in-out;
+}
+
+
+/* pseudo border */
+
+.slide:after {
+    display: block;
+    background: transparent;
+    content: "";
+    height: 1px;
+    margin: 0 auto;
+    width: 0;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+.slide:hover:after {
+    width: 50%;
+    background-color: #108CB5;
+}
+
+#contactMe:hover:after {
+    width: 70%;
+}
+
+/*!!END HOVER EFFECT ON NAVBAR END  !!*/
+
+/*  start button in navbar */
+
+#startButton {
+    color: #108CB5;
+    border: 1px solid #c1c7cd;
+    border-radius: 15px;
+    margin: auto 0;
+
+
+}
+#startButton:active {
+    transform: translateY(4px);
+}
+
+#startButton:hover {
+    border: 1px solid #108CB5;
+}
+
+
+/*searchbar positioning in navbar */
+
+.searchbar {
+    border-radius: 5px;
+    width: 35%;
+    border: 1px solid #637282;
+    background-image: url(../Images/search.icon.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 5px 20px 5px 40px;
+    align-self: center;
+    margin: 0;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.searchbar:focus {
+    width: 100%;
+    opacity: 0.6;
+}
+
+
+/* image positioning */
+
+#logo {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+
+/*start game button*/
+
+#startGameButton {
+    cursor: pointer;
+}
+.mainHeading{
+ 
+    color: #637282;
+}
+
+.content {
+height: 100%;
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.left-side-content {
+    flex-basis: 10%;
+    flex-grow: 2;
+}
+
+.right-side-content {
+   
+	align-self: center;
+    flex-basis: 40%;
+    flex-grow: 1;
+}
+
+
+.center-side-content {
+    align-self: initial;
+    flex-basis: 50%;
+    flex-grow: 1;
+    background-image: url(../Images/background-texture-content2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 500px;
+}
+@media screen and (max-height: 700px) {
+    .center-side-content {
+        align-self: center;
+    }
+}
+
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.startGameButton,
+.exploreGameButton {
+    flex-grow: 1;
+    text-decoration: none;
+    margin: 30px 10px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 20px;
+    border: none;
+}
+
+.startGameButton {
+    background-color: #108CB5;
+}
+
+.exploreGameButton {
+    background-color: gray;
+}
+
+.startGameButton:hover {
+    text-shadow: -1px 1px #27496d;
+}
+
+a {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1,
+h2,
+.buttons a,
+form input[type=email],
+form input[type=text],
+textarea,
+input {
+    font-family: 'Comfortaa', cursive, Arial, Sans-serif;
+    line-height: 1.2em;
+    padding: 5px;
+    word-spacing: 0.2em;
+    color: black;
+}
+
+h1 {
+    font-size: 31px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.buttons a {
+    color: #fff;
+}
+
+.buttons a:hover {
+    opacity: 0.7;
+}
+
+.footerContent {
+    border: 10px solid transparent;
+    border-image: url("../Images/border-nav.png") 30;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+
+}
+
+.informationFooter {
+    display: flex;
+    flex-basis: 25%;
+}
+
+.informationFooter li {
+    flex: 1 1 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.informationFooter a,
+.socialMediaIconsFooter a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.socialMediaIconsFooter {
+    display: flex;
+    max-width: 100px;
+    justify-content: flex-start;
+}
+
+.socialMediaIconsFooter li {
+    flex: 1 1 0;
+    list-style-type: none;
+}
+
+.socialMediaIconsFooter img {
+    max-width: 100%;
+    height: auto;
+}
+.footerWrapper{
+position: relative;
+border: red 10px solid;
+background:white;
+}
+
+.socialMediaIconsFooter img:hover {
+    opacity: 0.7;
+}
+footer{
+background:white;
+}
+.rights {
+
+background: white;
+
+    text-align: center;
+}
+
+.informationFooter {
+    margin: auto 0;
+}
+
+#startGameButton span {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#exploreGameButton span {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.gamedesc p {
+    font-size: 22px;
+    text-align: left;
+    font-family: 'Comfortaa', cursive, Arial, Sans-serif;
+    line-height: 1.2em;
+    padding: 5px;
+    word-spacing: 0.2em;
+    color: black;
+}
